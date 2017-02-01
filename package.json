@@ -1,0 +1,24 @@
+{
+  "name": "bookworm-adminpanel",
+  "version": "1.0.0",
+  "description": "BookWorm Admin Panel powered with Angular2.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CumhurD/BookWorm.AdminPanel.git"
+  },
+  "keywords": [
+    "angular2",
+    "bookworm",
+    "adminpanel"
+  ],
+  "author": "Cumhur Düzlü",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CumhurD/BookWorm.AdminPanel/issues"
+  },
+  "homepage": "https://github.com/CumhurD/BookWorm.AdminPanel#readme"
+}
