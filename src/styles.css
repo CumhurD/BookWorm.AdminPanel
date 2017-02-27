@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "assets/css/vendor.css";
+@import "assets/css/flat-admin.css";
+@import "assets/css/theme/blue-sky.css";
+@import "assets/css/theme/blue.css";
+@import "assets/css/theme/red.css";
+@import "assets/css/theme/yellow.css";
