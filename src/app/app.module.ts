@@ -8,21 +8,25 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './template/sidebar.component';
 import { NavbarComponent } from './template/navbar.component';
 import { DashboardComponent } from './component/dashboard.component';
+import { AuthorsComponent } from './component/authors.component';
+import { NotFoundComponent } from './component/not-found.component';
 
-import {appRoutes} from './app.router';
+import {routes} from './app.router';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    AuthorsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
