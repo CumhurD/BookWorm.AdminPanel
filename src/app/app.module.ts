@@ -9,7 +9,7 @@ import { SidebarComponent } from './template/sidebar.component';
 import { NavbarComponent } from './template/navbar.component';
 import { DashboardComponent } from './component/dashboard.component';
 import { AuthorsComponent } from './component/authors.component';
-import { NotFoundComponent } from './component/not-found.component';
+import { PageNotFoundComponent } from './component/page-not-found.component';
 
 import {routes} from './app.router';
 
@@ -20,7 +20,7 @@ import {routes} from './app.router';
     NavbarComponent,
     DashboardComponent,
     AuthorsComponent,
-    NotFoundComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

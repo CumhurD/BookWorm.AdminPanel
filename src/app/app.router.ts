@@ -4,7 +4,7 @@ import { Pages } from './model/common/page.model';
 
 import { DashboardComponent } from './component/dashboard.component';
 import { AuthorsComponent } from './component/authors.component';
-import { NotFoundComponent } from './component/not-found.component';
+import { PageNotFoundComponent } from './component/page-not-found.component';
 
 const getRoutes = (pageConfig: Pages): Routes => {
     if (!pageConfig)
@@ -43,23 +43,26 @@ const getPages = (pageConfig: Pages): Pages => {
 const pageConfiguration: Pages = [
     { path: 'dashboard', displayName: 'Dashboard', component: DashboardComponent, icon: 'fa fa-tasks' },
     {
-        path: 'books', redirectTo: 'books/add', displayName: 'Kitaplar', icon: 'fa fa-comments', childPages:
+        path: 'books', redirectTo: 'books/add', displayName: 'Kitaplar', icon: 'fa fa-comments', pathMatch:'full', childPages:
         [
             { path: 'books/add', displayName: 'Yeni Kitap', component: AuthorsComponent, icon: 'test' },
             { path: 'books/update', displayName: 'Düzenle', component: AuthorsComponent, icon: 'test' }
         ]
     },
     {
-        path: 'authors', redirectTo: 'authors/add', displayName: 'Yazarlar', icon: 'fa fa-cube', childPages:
+        path: 'authors', redirectTo: 'authors/add', displayName: 'Yazarlar', icon: 'fa fa-cube', pathMatch:'full', childPages:
         [
             { path: 'authors/add', displayName: 'Yeni Yazar', component: DashboardComponent, icon: 'test' },
             { path: 'authors/update', displayName: 'Düzenle', component: DashboardComponent, icon: 'test' }
         ]
-    },
-    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-    { path: '**', component: NotFoundComponent }
+    }
 ]
 
-export const routes: Routes = getRoutes(pageConfiguration);
+const defaultRoutes: Routes = [
+    { path: '', redirectTo: '/dashboard', pathMatch:'full'},
+    { path: '**', component: PageNotFoundComponent }
+]
+
+export const routes: Routes = getRoutes(pageConfiguration).concat(defaultRoutes);
 export const pages: Pages = getPages(pageConfiguration);
 
