@@ -2,9 +2,10 @@ import { Routes, Route, RouterState } from '@angular/router';
 
 import { Pages } from './model/common/page.model';
 
-import { DashboardComponent } from './component/dashboard.component';
-import { AuthorsComponent } from './component/authors.component';
-import { PageNotFoundComponent } from './component/page-not-found.component';
+import { DashboardComponent } from './component/common/dashboard.component';
+import { PageNotFoundComponent } from './component/common/page-not-found.component';
+import { AuthorsComponent } from './component/author/authors.component';
+import { AddAuthorComponent } from './component/author/add-author.component';
 
 const getRoutes = (pageConfig: Pages): Routes => {
     if (!pageConfig)
@@ -45,7 +46,7 @@ const pageConfiguration: Pages = [
     {
         path: 'books', redirectTo: 'books/add', displayName: 'Kitaplar', icon: 'fa fa-comments', pathMatch:'full', childPages:
         [
-            { path: 'books/add', displayName: 'Yeni Kitap', component: AuthorsComponent, icon: 'test' },
+            { path: 'books/add', displayName: 'Yeni Kitap', component: AddAuthorComponent, icon: 'test' },
             { path: 'books/update', displayName: 'Düzenle', component: AuthorsComponent, icon: 'test' }
         ]
     },

@@ -7,9 +7,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './template/sidebar.component';
 import { NavbarComponent } from './template/navbar.component';
-import { DashboardComponent } from './component/dashboard.component';
-import { AuthorsComponent } from './component/authors.component';
-import { PageNotFoundComponent } from './component/page-not-found.component';
+import { DashboardComponent } from './component/common/dashboard.component';
+import { AuthorsComponent } from './component/author/authors.component';
+import { AddAuthorComponent } from './component/author/add-author.component';
+import { PageNotFoundComponent } from './component/common/page-not-found.component';
 
 import {routes} from './app.router';
 
@@ -20,6 +21,7 @@ import {routes} from './app.router';
     NavbarComponent,
     DashboardComponent,
     AuthorsComponent,
+    AddAuthorComponent,
     PageNotFoundComponent
   ],
   imports: [
