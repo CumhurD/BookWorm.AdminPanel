@@ -4,11 +4,21 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+<<<<<<< HEAD
+=======
+    "lib": [
+      "es2016"
+    ],
+>>>>>>> bd77fba161a276cbc9e02d60ad46061ff93a3613
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "../dist/out-tsc-e2e",
     "sourceMap": true,
+<<<<<<< HEAD
     "target": "es5",
+=======
+    "target": "es6",
+>>>>>>> bd77fba161a276cbc9e02d60ad46061ff93a3613
     "typeRoots": [
       "../node_modules/@types"
     ]
