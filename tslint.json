@@ -46,11 +46,7 @@
     "no-empty": false,
     "no-empty-interface": true,
     "no-eval": true,
-<<<<<<< HEAD
     "no-inferrable-types": true,
-=======
-    "no-inferrable-types": [true, "ignore-params"],
->>>>>>> bd77fba161a276cbc9e02d60ad46061ff93a3613
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-string-throw": true,

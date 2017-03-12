@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 /* tslint:disable:no-unused-variable */
 
-=======
->>>>>>> bd77fba161a276cbc9e02d60ad46061ff93a3613
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
