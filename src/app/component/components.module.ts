@@ -1,1 +1,0 @@
-export 'author/authors.component';
