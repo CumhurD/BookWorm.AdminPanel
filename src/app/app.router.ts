@@ -9,9 +9,9 @@ import { AddAuthorComponent } from './component/author/add-author.component';
 
 const getRoutes = (pageConfig: Pages): Routes => {
     if (!pageConfig)
-        return null;
-
-    let routes: Routes;
+        return null; 
+ 
+    let routes: Routes;      
 
     routes = pageConfig.filter(page => page.component && page.path || page.redirectTo);
 

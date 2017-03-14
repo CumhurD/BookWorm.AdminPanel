@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, RequestOptions } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -12,7 +12,10 @@ import { AuthorsComponent } from './component/author/authors.component';
 import { AddAuthorComponent } from './component/author/add-author.component';
 import { PageNotFoundComponent } from './component/common/page-not-found.component';
 
-import {routes} from './app.router';
+import { NotificationService } from './service/notification.service';
+import { BookwormApiRequestOptions } from 'app/bookworm-api.request.options';
+
+import { routes } from './app.router';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import {routes} from './app.router';
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    NotificationService,
+    { provide: RequestOptions, useClass: BookwormApiRequestOptions }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
