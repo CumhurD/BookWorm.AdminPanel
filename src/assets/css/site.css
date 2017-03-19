@@ -1,0 +1,11 @@
+li.child-active {
+    padding: 2px 5px !important;
+    font-weight: 200 !important;
+    border-radius: 2px !important;
+    background-color: #29c75f;
+    margin-right: 5px;
+}
+
+li.child-active a {
+    color: #FFF !important;
+}
