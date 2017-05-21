@@ -2110,12 +2110,14 @@ a:hover {
           display: block;
           visibility: visible;
           opacity: 1;
-          transform: translate(0, -24px); }
+          /*transform: translate(0, -24px); */
+          }
         .navbar .navbar-collapse .navbar-nav > li.dropdown:hover:after {
           display: block;
           visibility: visible;
           opacity: 1;
-          transform: translate(-50%, -22px); }
+          /*transform: translate(-50%, -22px); */
+          }
         .navbar .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu {
           display: block;
           visibility: hidden;
