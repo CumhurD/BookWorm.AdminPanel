@@ -14,6 +14,8 @@ import { PageNotFoundComponent } from './component/common/page-not-found.compone
 
 import { NotificationService } from './service/notification.service';
 import { BookwormApiRequestOptions } from 'app/bookworm-api.request.options';
+import { BookService } from './service/book.service';
+
 
 import { routes } from './app.router';
 
@@ -35,6 +37,7 @@ import { routes } from './app.router';
   ],
   providers: [
     NotificationService,
+    BookService,
     { provide: RequestOptions, useClass: BookwormApiRequestOptions }
   ],
   bootstrap: [AppComponent]
