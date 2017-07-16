@@ -6,6 +6,7 @@ import { DashboardComponent } from './component/common/dashboard.component';
 import { PageNotFoundComponent } from './component/common/page-not-found.component';
 import { AuthorsComponent } from './component/author/authors.component';
 import { AddAuthorComponent } from './component/author/add-author.component';
+import { BooksComponent } from './component/book/books.component';
 
 const getRoutes = (pageConfig: Pages): Routes => {
     if (!pageConfig)
@@ -46,7 +47,7 @@ const pageConfiguration: Pages = [
     {
         path: 'books', redirectTo: 'books/add', displayName: 'Kitaplar', icon: 'fa fa-comments', pathMatch:'full', childPages:
         [
-            { path: 'books/add', displayName: 'Yeni Kitap', component: AddAuthorComponent, icon: 'test' },
+            { path: 'books/add', displayName: 'Yeni Kitap', component: BooksComponent, icon: 'test' },
             { path: 'books/update', displayName: 'Düzenle', component: AuthorsComponent, icon: 'test' }
         ]
     },

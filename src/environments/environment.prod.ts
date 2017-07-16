@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  baseApiUrl: 'http://localhost:3000/'
+  bookwormApiUrl: 'http://localhost:3000/'
 };
     

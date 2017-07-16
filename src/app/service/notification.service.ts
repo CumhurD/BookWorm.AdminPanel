@@ -1,5 +1,5 @@
 import { Injectable, Component } from '@angular/core';
-import { Http, RequestOptions} from '@angular/http';
+import { Http } from '@angular/http';
 
 @Injectable()
 export class NotificationService {

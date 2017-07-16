@@ -10,24 +10,29 @@ import { NavbarComponent } from './template/navbar.component';
 import { DashboardComponent } from './component/common/dashboard.component';
 import { AuthorsComponent } from './component/author/authors.component';
 import { AddAuthorComponent } from './component/author/add-author.component';
+import { BooksComponent } from './component/book/books.component';
 import { PageNotFoundComponent } from './component/common/page-not-found.component';
 
+
 import { NotificationService } from './service/notification.service';
-import { BookwormApiRequestOptions } from 'app/bookworm-api.request.options';
-import { BookService } from './service/book.service';
+import { BookService } from './service/bookworm-api.service';
 
 
-import { routes } from './app.router';
+import { routes } from './app.router';    
+
+import {AlgusDrowdownDirective} from 'algus-components';
 
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent,
-    SidebarComponent,
+    SidebarComponent,  
     NavbarComponent,
     DashboardComponent,
-    AuthorsComponent,
-    AddAuthorComponent,
-    PageNotFoundComponent
+    AuthorsComponent,  
+    AddAuthorComponent,  
+    BooksComponent,
+    PageNotFoundComponent,
+    AlgusDrowdownDirective
   ],
   imports: [
     BrowserModule,
@@ -37,8 +42,7 @@ import { routes } from './app.router';
   ],
   providers: [
     NotificationService,
-    BookService,
-    { provide: RequestOptions, useClass: BookwormApiRequestOptions }
+    BookService
   ],
   bootstrap: [AppComponent]
 })

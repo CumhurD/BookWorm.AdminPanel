@@ -7,3 +7,4 @@
 @import "assets/css/theme/blue.css";
 @import "assets/css/theme/red.css";
 @import "assets/css/theme/yellow.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
